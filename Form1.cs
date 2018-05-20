@@ -25,14 +25,13 @@ namespace ticket
         public Form1()
         {
             InitializeComponent();           
-            page21.Visible = false;
+            page21.Visible = true;
             page_movie_select1.Visible = false;
             page_auditorium1.Visible = false;                        
             page21.ButtonClicked += button_Click;            
             page_auditorium1.ButtonClicked += button_Click;
             page_movie_select1.ButtonClicked += button_Click;
-            login = new Form_login();
-            login.ShowDialog();
+            login = new Form_login();           
             conn = new SQLiteConnection("Data source=" + path2 + ";Version=3");
            
         }    
